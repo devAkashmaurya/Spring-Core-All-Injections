@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="
+ http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Normal Beans -->
+
+	<!-- <bean class="com.springcore.Student" name="student1"> <property name="studentId" 
+		value="2344"/> <property name="studentName" value="Alok /Singh"/> <property 
+		name="studentAddress" value="Vellure"/> </bean> <bean class="com.springcore.Student" 
+		name="student2"> <property name="studentId" value="6344"/> <property name="studentName" 
+		value="Sobi Singh"/> <property name="studentAddress" value="Kol"/> </bean> -->
+
+	<!-- Bean using p-schema -->
+
+	<!-- <bean class="com.springcore.Student" name="student1" p:studentId="8787" 
+		p:studentName="Ashok j" p:studentAddress="LKW"/> -->
+
+	<!-- Collection -->
+
+	<bean class="com.springcore.Student" name="student2">
+
+		<property name="studentId">
+			<value>
+				5656
+			</value>
+		</property>
+		<property name="studentName">
+			<value>
+				Venket
+			</value>
+		</property>
+		<property name="studentAddress">
+			<value>
+				Kashmir
+			</value>
+		</property>
+
+		<property name="studentMarks">
+			<list>
+				<value>2323</value>
+				<value>56</value>
+				<value>677</value>
+			</list>
+		</property>
+
+	</bean>
+
+</beans>
