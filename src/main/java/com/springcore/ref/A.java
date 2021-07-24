@@ -24,4 +24,11 @@ public class A {
 		return "A [x=" + x + ", ob=" + ob + "]";
 	}
 	
+	public void init() {
+		System.out.println("initializing");
+	}
+	public void destroy() {
+		System.out.println("Destroying");
+	}
+	
 }
